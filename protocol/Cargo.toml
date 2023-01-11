@@ -1,0 +1,18 @@
+[package]
+name = "protocol"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wasmer = { version="3.0.2" }
+serde = { version = "1.0", features = ["derive"] }
+fp-bindgen = { git="https://github.com/fiberplane/fp-bindgen", features = [
+  "serde-bytes-compat",
+  "generators",
+]}
+
+once_cell = "1"
+serde_tuple = "0.5"
+time = { version = "0.3", features = ["macros", "serde-well-known"] }
