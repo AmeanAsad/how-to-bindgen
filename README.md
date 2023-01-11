@@ -7,7 +7,7 @@ This repo of how to create wasm bindings for complex data structures in Rust usi
 WASM functions only accept primitive [data types](https://webassembly.github.io/spec/core/syntax/types.html) as inputs or output params.
 The data types are basically floats, ints, and vectors. 
 Out of the box, runtimes like Wasmer and Wasmtime only support these datatypes when running WASM bundles. If you want to interact with WASM
-functions and use more complex data structures like a HashMap or an Array, you need what is called "glue" code to have a mechanism 
+functions and use more complex data structures like a HashMaps, arrays, etc. , you need what is called "glue" code to have a mechanism 
 to communicate those datatypes in way WASM can understand. The most common library that does that is [wasm-bindgen](https://rustwasm.github.io/wasm-bindgen/)
 but it is only useful if you are exchanding those values between Javascript and Rust. 
 
